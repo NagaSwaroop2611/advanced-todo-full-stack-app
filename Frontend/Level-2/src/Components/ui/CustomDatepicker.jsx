@@ -31,6 +31,7 @@ const CustomDatepicker = ({name, date, onDateChange, isClear = true}) => {
         onChange={onDateChange}
         isClearable={isClear}
         customInput={<CustomInput/>}
+        minDate={new Date()} // disables past dates
       />
     </div>
   );

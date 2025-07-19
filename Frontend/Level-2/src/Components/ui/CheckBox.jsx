@@ -13,5 +13,5 @@ const CheckBox = ({label, onClick}) => {
     </div>
   );
 };
-
+ 
 export default CheckBox;

@@ -1,5 +1,5 @@
 async function createTaskAPI(values,handleResponse,handleError,setLoading) {
-  setLoading(true)
+  setLoading(true);
   try {
     const baseUrl = import.meta.env.VITE_APP_API_BASE_URL;
     const endpoint = "/api/v2/task";

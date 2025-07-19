@@ -4,12 +4,15 @@ import MainLayout from "./Components/MainLayout";
 import TaskMain from "./Components/TaskMain"
 
 const App = () => {
-  return <div>
-    <MainLayout>
-      <TaskMain/>
-    </MainLayout>
-    <Toaster/>
-  </div>;
+  return (
+    <>
+      <MainLayout>
+        <TaskMain />
+      </MainLayout>
+      <Toaster />
+    </>
+  );
 };
+
 
 export default App;

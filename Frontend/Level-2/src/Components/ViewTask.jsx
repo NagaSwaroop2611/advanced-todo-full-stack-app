@@ -30,7 +30,7 @@ const ViewTask = ({
   const closeDeleteTaskPopup = () => setShowDeleteTaskPopup(false);
   
   return (
-    <Modal isOpen={true} onClose={false}>
+    <Modal isOpen={true} onClose={showTaskListScreen}>
       <div className='flex justify-between view-task-header'>
         <div className="flex">
           <span className='task-icon-wrapper'>

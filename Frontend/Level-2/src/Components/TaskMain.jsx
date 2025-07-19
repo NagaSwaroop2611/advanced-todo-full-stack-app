@@ -13,6 +13,7 @@ const TaskMain = () => {
   const [tasks, setTasks] = useState([]);
   const [activeTaskId,setActiveTaskId] = useState("");
   const [boardView,setBoardView] = useState(false);
+  // console.log(activeTaskId);
   
   const activeTask = useMemo(
     () => tasks.find((task) => task._id === activeTaskId),

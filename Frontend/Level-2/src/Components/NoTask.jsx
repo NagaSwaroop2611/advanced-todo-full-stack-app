@@ -20,4 +20,4 @@ const NoTask = ({showCreateTaskScreen}) => {
   )
 };
 
-export default NoTask;
+export default NoTask; 

@@ -7,7 +7,6 @@ import Memo from "../assets/memo.svg";
 import  Calendar from "../assets/calendar.svg";
 import clsx from "clsx";
 
-
 const CreateTask = ({fetchAllTasks,showTaskListScreen}) => {
 
   // 3 states related to our task 

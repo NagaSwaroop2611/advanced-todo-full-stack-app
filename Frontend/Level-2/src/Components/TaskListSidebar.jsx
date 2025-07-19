@@ -26,7 +26,7 @@ const TaskListSidebar = ({ boardView, setBoardView, setTasks }) => {
   const [selectedStatus, setSelectedStatus] = useState([]);
   const [sortOption, setSortOption] = useState([]);
 
-  console.log(labels);
+  // console.log(labels);
   
   //fetch all labels
   useEffect(() => {

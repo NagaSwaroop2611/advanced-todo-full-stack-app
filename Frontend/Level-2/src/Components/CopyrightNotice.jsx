@@ -10,3 +10,4 @@ export default function CopyRightNotice({noticeText=defaultNoticeText}) {
     </div>
   )
 }
+ 

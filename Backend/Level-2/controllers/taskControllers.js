@@ -70,7 +70,7 @@ const getTask = async (req,res) => {
       const labelItems = JSON.parse(labels);
       console.log(labels,labelItems);
       query.labels ={$in: labelItems};
-      // query = {status:{$in:statusItems}}
+      // query = {labels:{$in:labelItems}}
     }
 
     // Pagination

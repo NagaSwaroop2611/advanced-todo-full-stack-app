@@ -73,7 +73,7 @@ const LabelSelector = ({
     };
     document.addEventListener("mousedown", handleOutsideClick);
     return () => {
-      document.addEventListener("mousedown", handleOutsideClick);
+      document.removeEventListener("mousedown", handleOutsideClick);
     };
   }, []);
 

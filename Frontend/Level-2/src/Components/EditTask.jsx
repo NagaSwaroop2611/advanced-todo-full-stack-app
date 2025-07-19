@@ -8,12 +8,13 @@ import Memo from "../assets/memo.svg"
 import TitleImg from "../assets/title-placeholder-img.svg";
 import  Calendar  from "../assets/calendar.svg";
 import updateTaskAPI from "./api/updateTask";
+import toast from "react-hot-toast";
 
 
 export const EditTask = ({ showTaskListScreen, task ,fetchAllTasks }) => {
-  const [taskTitle, setTaskTitle] = useState(task.title ?? " ");
+  const [taskTitle, setTaskTitle] = useState(task.title ?? "");
   const [taskDescription, setTaskDescription] = useState(
-    task.description ?? " "
+    task.description ?? ""
   );
   const [taskDueDate, setTaskDueDate] = useState(
     task.due_date ? new Date(task.due_date) : undefined
@@ -52,7 +53,7 @@ export const EditTask = ({ showTaskListScreen, task ,fetchAllTasks }) => {
   }, [fetchAllTasks]);
 
   const handleError = useCallback(function (errorMsg) {
-    alert(errorMsg);
+    toast.error(errorMsg);
     console.log(errorMsg);
   }, []);
 
@@ -134,4 +135,4 @@ export const EditTask = ({ showTaskListScreen, task ,fetchAllTasks }) => {
   );
 };
 
-export default EditTask
+export default EditTask;

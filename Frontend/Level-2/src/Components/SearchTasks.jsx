@@ -58,7 +58,7 @@ const SearchTasks = ({
   //   },
   //   [setSearchQuery]
   // );
-
+ 
   return (
     <div className="search-box-container">
       <input

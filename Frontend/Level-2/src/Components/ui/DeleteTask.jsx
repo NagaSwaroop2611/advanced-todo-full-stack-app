@@ -60,7 +60,7 @@
 //     </Modal>
 //   );
 // };
-
+ 
 
 import React from "react";
 import Modal from "./Modal";
@@ -99,8 +99,8 @@ export const DeleteTask = ({ isOpen, onClose, task, fetchAllTasks }) => {
         </div>
         <div className="delete-popup-content">
           <p className="delete-task-text">
-            Are you sure you want to delete? <br />
-            <span className="delete-task-title">{task.title}</span>
+            Are you sure you want to delete <br />
+            <span className="delete-task-title">{task.title} ?</span>
           </p>
           <div className="delete-action-btns">
             <button className="btn cancel-btn" onClick={onClose}>
